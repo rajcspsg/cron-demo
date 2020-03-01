@@ -4,4 +4,4 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
 LOG_DIR=/var/log/myapp-services-cron
 MYAPP_SERVICES_DIR=/opt/myorg/apps/myapp-services
 
-0 */1 * * * myappcron node $MYAPP_SERVICES_DIR/scripts/processor.js &>> $LOG_DIR/processor.log 2>&1
+* * * * * myappcron node $MYAPP_SERVICES_DIR/scripts/processor.js &>> $LOG_DIR/processor.log 2>&1
