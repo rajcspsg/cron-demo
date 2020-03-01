@@ -1,7 +1,7 @@
 %define __prelink_undo_cmd %{nil}
 
 Summary: Myapp Services
-Name: NAME:myapp-services:NAME
+Name: myapp-services
 Version: %{_version}
 Release: %{_release}%{?_dist}
 Source0: %{_source0}
@@ -30,7 +30,7 @@ Services for the Myapp Portal.
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p ${RPM_BUILD_ROOT}%{_sysconfdir}/systemd/system
-mkdir -p $RPM_BUILD_ROOT/opt/synacor/apps/myapp-services
+mkdir -p $RPM_BUILD_ROOT/opt/myorg/apps/myapp-services
 cp -r * $RPM_BUILD_ROOT/opt/myorg/apps/myapp-services
 cd $RPM_BUILD_ROOT/opt/myorg/apps/myapp-services
 mkdir -p ${RPM_BUILD_ROOT}%{_sysconfdir}/cron.d
