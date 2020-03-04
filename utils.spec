@@ -1,10 +1,4 @@
-###############################################################################
-# Spec file for Utils
-################################################################################
-# Configured to be built by user student or other non-root user
-################################################################################
-#
-Summary: Utility scripts for testing RPM creation
+Summary: Utility for testing RPM creation
 Name: utils
 Version: 1.0.0
 Release: 1

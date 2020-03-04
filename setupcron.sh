@@ -6,4 +6,4 @@ sudo yum install redhat-rpm-config -y
 sudo yum install rpm-build -y
 sudo yum install gcc -y
 sudo yum install make -y
-
+sudo cp -r /vagrant/cron-demo /home/vagrant/
